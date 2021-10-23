@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <!-- =====BOX ICONS===== -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Portfolio website complete</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">John Doe</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">Work</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title" id="tagline">
+                    Hi,<br/>I am <span class="home__title-color">John Doe</span><br />
+                    A <span class="txt-rotate" data-period="2000" data-rotate='[ "Graphic Designer", "Web Developer" ]'>
+                    </span>
+                </h1>
+
+                <a href="#contact" class="button">Contact Me</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/" class="home__social-icon"><i
+                        class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/" class="home__social-icon"><i class="bx bxl-github"></i></a>
+                <a href="https://www.facebook.com/" class="home__social-icon"><i
+                        class="bx bxl-facebook"></i></a>
+            </div>
+
+            <div class="home__img">
+                <img src="./assets/img/profile.jpg" alt="" style="border-radius:50%;border: 10px solid #4070f4a6;max-width: 80%;" />
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="./assets/img/about.jpg" alt="" />
+                </div>
+
+                <div>
+                    <h1 class="about__subtitle" id="tagline">I'm  John</h1>
+                    
+                    <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, excepturi dolore, amet nihil in eius quo totam laboriosam impedit ducimus accusamus officia molestiae nisi, perferendis quae minus maiores delectus veritatis?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-python skills__icon'></i>
+                            <!-- <img src="./assets/img/python.png" alt="" class="skills_icon" style="width: 30px;height: 30px;"> -->
+                            <span class="skills__name"> &nbsp;&nbsp;&nbsp; Python</span>
+                        </div>
+                        </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="bx bxl-html5 skills__icon"></i>
+                            <span class="skills__name">HTML5 and CSS3</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="bx bxl-adobe skills__icon"></i>
+                            <span class="skills__name">Adobe Photoshop</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="bx bxl-javascript skills__icon"></i>
+                            <span class="skills__name">Javascript</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="bx bxs-paint skills__icon"></i>
+                            <span class="skills__name">Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
+
+            <div class="work__container bd-grid">
+                <div class="work__img">
+                    <img src="./assets/img/work1.jpg" alt="" />
+                </div>
+                <div class="work__img">
+                    <img src="./assets/img/work2.jpg" alt="" />
+                </div>
+                <div class="work__img">
+                    <img src="./assets/img/work3.jpg" alt="" />
+                </div>
+                <div class="work__img">
+                    <img src="./assets/img/work4.jpg" alt="" />
+                </div>
+                <div class="work__img">
+                    <img src="./assets/img/work5.jpg" alt="" />
+                </div>
+                <div class="work__img">
+                    <img src="./assets/img/work6.jpg" alt="" />
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form  action="" method="POST" class="contact__form">
+                    <input type="text" placeholder="John Doe" class="contact__input" name="Name"/>
+                    <input type="email" placeholder="abc@gmail.com" class="contact__input" name="Email" />
+                    <textarea  id="" cols="0" rows="10" class="contact__input" name="message"></textarea>
+                    <input type="submit" value="Submit" class="contact__button button" />
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">John Doe</p>
+        <div class="footer__social">
+            <a href="https://www.facebook.com/" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.linkedin.com/" class="footer__icon"><i
+                    class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/" class="footer__icon"><i class="bx bxl-github"></i></a>
+        </div>
+        <p>&#169; 2021 copyright all right reserved</p>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        var TxtRotate = function (el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtRotate.prototype.tick = function () {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+            var that = this;
+            var delta = 300 - Math.random() * 100;
+
+            if (this.isDeleting) { delta /= 2; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function () {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function () {
+            var elements = document.getElementsByClassName('txt-rotate');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.09em solid black }";
+            document.body.appendChild(css);
+        };
+    </script>
+</body>
+
+</html>
