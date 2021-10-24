@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+    font-family: 'Inconsolata', monospace;
+}
+
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.header {
+    background-image: url('./bg2.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profile {
+    z-index: 20;
+}
