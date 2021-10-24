@@ -6,4 +6,4 @@ When sending pr please mind these things:
 2) add the preview image of the website in the folder
 3) Don't add your real names and your social-links in the website
 4) Add you names to **contributors.md** file
- 
+**only responsive templates and clean ui accepted**
