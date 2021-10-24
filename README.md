@@ -1,4 +1,4 @@
-# portfolio-templates
+# responsive and clean portfolio-templates
 collection of portfolio websites templates
 ## Contribution guidelines
 When sending pr please mind these things:
