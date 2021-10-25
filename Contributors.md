@@ -3,3 +3,5 @@
 | BinayakJha      | [@BinayakJha](https://github.com/BinayakJha).        |
 | Sc0rp10n.py     | [@sc0rp10n-py](https://github.com/sc0rp10n-py)       |
 | SurendarSingh   | [@SurendarSingh](https://github.com/SurendarSingh)   |
+| VishalSawai     | [@vishal-sawai](https://github.com/vishal-sawai)     |
+
