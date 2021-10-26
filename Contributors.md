@@ -9,3 +9,5 @@
 | VishalSawai     | [@vishal-sawai](https://github.com/vishal-sawai)     |
 
 | Aniket Dhokane  | [@aniket7515](https://github.com/aniket7515)         |
+
+| Siddharth Koundal | [@siddharthkoundal](https://github.com/siddharthkoundal) |

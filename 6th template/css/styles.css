@@ -1,0 +1,296 @@
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+h2 {
+  padding-bottom: 10%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  color: #8f8f8f;
+}
+  
+/* Headings */
+
+.big-heading {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 4rem;
+  line-height: 1.5;
+}
+
+#title {
+  background-color: #b8b5ff;
+  color: #fff;
+}
+
+.container-fluid-1 {
+  padding: 0 1%;
+}
+
+.container-fluid-2 {
+  padding: 4% 15%;
+}
+
+.container-3 {
+  margin: 12% 15% 12% 5%;
+  padding: 5%;
+  background-color: #faf1e6;
+  text-align: center;
+  border-radius: 30px;
+}
+
+/* .container-3:hover {
+  transform: scale(1.05);
+} */
+
+.container-4 {
+  margin: 12% 5% 12% 15%;
+  padding: 5%;
+  background-color: #fff5fd;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.container-5 {
+  margin: 12% 5%;
+  padding: 5%;
+  background-color: #edffec;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.container-6 {
+  margin: 12% 5%;
+  padding: 5%;
+  background-color: #eff8ff;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.container-fluid-7 {
+  background-color: #b8b5ff;
+  color: #fff;
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.container-8 {
+  text-align: center;
+  padding: 7% 15%;
+}
+
+/* Navbar */
+
+.navbar {
+  padding-bottom: 2rem;
+}
+
+.navbar-brand {
+  font-family: "Monsieur La Doulaise", cursive;
+  font-size: 2.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat Alternates";
+}
+
+/* lets chat button */
+
+.lets-chat-button {
+  margin-top: 5%;
+  color: #b8b5ff;
+}
+
+/* Title Image */
+
+.title-image {
+  width: 100%;
+  height: auto;
+}
+
+/* About Image */
+
+/* .about-image {
+  width: 10%;
+  height: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+} */
+
+/* Institute image */
+
+.institute-image {
+  width: 50%;
+  height: auto;
+}
+
+/* Department Icon */
+
+.dept-icon {
+  padding-bottom: 10%;
+}
+
+/* Carousel Button */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 55px;
+  color: red;
+}
+
+/* Carousel Indicator */
+
+/* Carousel Image */
+.carousel-img {
+  width: 25%;
+  height: auto;
+  padding: 20px 0;
+}
+
+/* Card */
+
+.card {
+  margin: 0 10% 10%;
+  padding: 5;
+  border-radius: 10px;
+}
+
+.card-icon {
+  padding: 10%;
+  position: relative;
+}
+
+.card-header {
+  background-color: rgba(red, green, blue, alpha);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.skill-icon-1 {
+  color: #5e97d0;
+}
+
+.skill-icon-2 {
+  color: #5e97d0;
+}
+
+.skill-icon-3 {
+  color: #e34c26;
+}
+
+.skill-icon-4 {
+  color: #2965f1;
+}
+
+/* CTA */
+
+.cta-heading {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* footer */
+
+.socials-link {
+  color: #b8b5ff;
+  margin: 20px 20px;
+}
+
+#copyright {
+  margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+  #title {
+    text-align: center;
+  }
+
+  .container-3 {
+    margin: 12% 7%;
+    padding: 8%;
+  }
+
+  .container-4 {
+    margin: 12% 7%;
+    padding: 8%;
+  }
+
+  .container-5 {
+    margin: 12% 7%;
+    padding: 8%;
+  }
+
+  .container-6 {
+    margin: 12% 7%;
+    padding: 8%;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  .title-image {
+    padding: 12%;
+  }
+
+  .bits-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .dept-icon {
+    padding: 10%;
+  }
+
+  .card {
+    margin: 8%;
+  }
+
+  .card-icon {
+    width: 100%;
+    height: auto;
+  }
+}
