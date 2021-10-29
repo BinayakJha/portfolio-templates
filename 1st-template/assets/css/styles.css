@@ -327,23 +327,116 @@ img{
 }
 
 /* ===== CONTACT =====*/
-.contact__input{
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
+.container1 {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
 }
-.contact__button{
-  display: block;
+
+.screen-body {
+  display: flex;
+  background-color: rgb(210, 255, 255);
+  border-radius: 0px;
+}
+
+.screen-body:hover{
+  box-shadow: 10px 10px 15px rgba(0, 63, 63, 0.603);
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 30px 40px;
+}
+
+.screen-body-item.left {
+  flex-direction: column;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: #888;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
   border: none;
+  border-bottom: 1px solid #666;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  text-transform: uppercase;
   outline: none;
-  font-size: var(--normal-font-size);
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: rgb(119, 119, 119);
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  font-size: 18px;
   cursor: pointer;
-  margin-left: auto;
+  outline: none;
+  font-weight: 900;
+  padding: 10px 15px;
+}
+
+.app-form-button:hover {
+  color: #0300b4;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
 }
 
 /* ===== FOOTER =====*/
@@ -454,3 +547,5 @@ img{
     bottom: 25%;
   }
 }
+
+
