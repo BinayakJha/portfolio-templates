@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/styles.css" />
-
+    <script src="https://kit.fontawesome.com/c1e61fbc1e.js" crossorigin="anonymous"></script>
     <!-- =====BOX ICONS===== -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -165,16 +165,55 @@
         <!--===== CONTACT =====-->
         <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>
+            <div class="container1">
 
-            <div class="contact__container bd-grid">
-                <form  action="" method="POST" class="contact__form">
-                    <input type="text" placeholder="John Doe" class="contact__input" name="Name"/>
-                    <input type="email" placeholder="abc@gmail.com" class="contact__input" name="Email" />
-                    <textarea  id="" cols="0" rows="10" class="contact__input" name="message"></textarea>
-                    <input type="submit" value="Submit" class="contact__button button" />
-                </form>
-            </div>
+                <div class="screen-body">
+                   
+                  <div class="screen-body-item left">
+                      <a href="mailto:" target="_blank"><i
+                          class="far fa-envelope text-2xl md:text-5xl p-6 hover:text-yellow-500"></i></a>
+                  
+                  <a href="https://twitter.com/" target="_blank"><i
+                          class="fab fa-twitter text-2xl md:text-5xl p-6 hover:text-blue-500"></i></a>
+                  
+                  <a href="https://www.instagram.com/" target="_blank"><i
+                          class="fab fa-instagram text-2xl md:text-5xl p-6 hover:text-pink-500"></i></a>
+                  
+                  <a href="https://www.youtube.com" target="_blank"><i
+                          class="fab fa-youtube text-2xl md:text-5xl p-6 hover:text-red-500"></i></a>
+          
+                          <a href="https://www.github.com" target="_blank"><i
+                              class="fab fa-github text-2xl md:text-5xl p-6 hover:text-black-100"></i></a> 
+                              
+                              <a href="https://www.linkedin.com" target="_blank"><i
+                                  class="fab fa-linkedin text-2xl md:text-5xl p-6 hover:text-blue-400"></i></a>            
+                    
+                  </div>
+                  <div class="screen-body-item">
+                    <div class="app-form">
+                      <div class="app-form-group">
+                        <input class="app-form-control" placeholder="NAME">
+                      </div>
+                      <div class="app-form-group">
+                        <input class="app-form-control" placeholder="EMAIL">
+                      </div>
+                      <div class="app-form-group">
+                        <input class="app-form-control" placeholder="CONTACT NO">
+                      </div>
+                      <div class="app-form-group message">
+                        <input class="app-form-control" placeholder="MESSAGE">
+                      </div>
+                      <div class="app-form-group buttons">
+                        <button class="app-form-button">CANCEL</button>
+                        <button class="app-form-button">SEND</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
         </section>
+        <!-- /CONTACT -->
     </main>
 
     <!--===== FOOTER =====-->
