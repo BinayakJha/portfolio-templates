@@ -11,3 +11,6 @@
 | Aniket Dhokane  | [@aniket7515](https://github.com/aniket7515)         |
 
 | Siddharth Koundal | [@siddharthkoundal](https://github.com/siddharthkoundal) |
+
+| Mario Randrianomearisoa | [@MaxR522](https://github.com/MaxR522) |
+
