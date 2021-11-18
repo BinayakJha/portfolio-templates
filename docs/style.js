@@ -24,7 +24,7 @@ const render = function (projects) {
         src="./docs/${p.img}" />
     <div class="grid__overlay">
         <p>${p.name}</p>
-        <a href="${p.link}"></a>
+        <a href="${p.link}/"></a>
         <h3 class="grid__title">${p.desination}</h3>
     </div>
     <div class="grid__overlay animatable">

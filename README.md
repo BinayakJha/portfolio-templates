@@ -1,4 +1,5 @@
 # responsive and clean portfolio-templates
+[Link to the portfolios](https://gallant-jones-f0163f.netlify.app/)
 collection of portfolio websites templates
 ## Contribution guidelines
 When sending pr please mind these things:
