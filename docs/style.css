@@ -9,6 +9,7 @@ body {
 	background: linear-gradient(45deg, black 25%, transparent 35% 60%, black 70%),
 		linear-gradient(-45deg, black 25%, red 35% 60%, black 70%);
 	background-size: 100px 100px;
+        box-sizing:border-box;
 }
 
 button {
