@@ -21,7 +21,7 @@ const render = function (projects) {
         const project = document.createElement("div");
         project.classList.add("project");
         project.innerHTML = `<img class="project__image"
-        src="${p.img}" />
+        src="./docs/${p.img}" />
     <div class="grid__overlay">
         <p>${p.name}</p>
         <a href="${p.link}"></a>
