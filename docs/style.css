@@ -13,15 +13,21 @@ body {
 button {
 	cursor: pointer;
 }
-img{height: 100%;}
+
+img {
+	height: 100%;
+}
+
 #portfolio {
 	width: min(100vw, 1000px);
 	min-height: 100vh;
-	background: #ffffff;
+	padding: 5px;
+	background: linear-gradient(to right, black 0%, transparent 5%),linear-gradient(to left, black 0%, transparent 5%),repeating-linear-gradient(to bottom, black 5%, red 7% 10%, black 12% 15%);
+	background-size: 100% 100%,100% 100%,50vw 100vh;
 	position: relative;
 	display: grid;
 	grid-template-columns: repeat(4, minmax(200px, 1fr));
-	grid-gap: 2px;
+	grid-gap: 5px;
 }
 
 @media (max-width:800px) {
@@ -41,6 +47,7 @@ img{height: 100%;}
 	position: relative;
 	background: #F2DAD7;
 	overflow: hidden;
+	border-radius: 20px;
 }
 
 .project img {
@@ -74,7 +81,7 @@ img{height: 100%;}
 
 .project:hover .grid__overlay.animatable,
 
-.project:focus .grid__overlay.animatable{
+.project:focus .grid__overlay.animatable {
 	transform: translateY(0%);
 	transition: all 0.3s ease-in-out;
 }
