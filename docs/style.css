@@ -4,6 +4,7 @@ body {
 	font-family: "Inconsolata", monospace;
 	margin: 0;
 	display: flex;
+        flex-direction:column;
 	justify-content: center;
 	background: linear-gradient(45deg, black 25%, transparent 35% 60%, black 70%),
 		linear-gradient(-45deg, black 25%, red 35% 60%, black 70%);
