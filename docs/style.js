@@ -1,24 +1,25 @@
 import projects from "./projects.js";
 console.log(projects);
-const overlay = document.querySelector('.overlay');
-const overlayImage = document.querySelector('.overlay__inner img');
-const overlayLink = document.querySelector('.overlay__inner a');
+const overlay = document.querySelector(".overlay");
+const overlayImage = document.querySelector(".overlay__inner img");
+const overlayLink = document.querySelector(".overlay__inner a");
 
 function open(e) {
-  overlay.classList.add('open');
-  const src = e.currentTarget.querySelector('img').src;
-  const href = e.currentTarget.querySelector('a')
-                   ? e.currentTarget.querySelector('a').href
-                   : '#';
+  overlay.classList.add("open");
+  const src = e.currentTarget.querySelector("img").src;
+  const href = e.currentTarget.querySelector("a")
+    ? e.currentTarget.querySelector("a").href
+    : "#";
   overlayImage.src = src;
   overlayLink.href = href;
 }
 
-function close() { overlay.classList.remove('open'); }
+function close() {
+  overlay.classList.remove("open");
+}
 
-const render =
-    function(projects) {
-  projects["projects"].forEach(p => {
+const render = function (projects) {
+  projects["projects"].forEach((p) => {
     const project = document.createElement("div");
     project.classList.add("project");
     project.innerHTML = `<img class="project__image"
@@ -32,12 +33,14 @@ const render =
         <button class="viewbutton">view more</button>
     </div>`;
     overlay.insertAdjacentElement("beforebegin", project);
-  })
-}
+  });
+};
 
-    window.onload = function() {
+window.onload = function () {
   render(projects);
-  const buttons = document.querySelectorAll('.project');
-  buttons.forEach(button => { button.addEventListener('click', open); });
-  overlay.addEventListener('click', close);
-}
+  const buttons = document.querySelectorAll(".project");
+  buttons.forEach((button) => {
+    button.addEventListener("click", open);
+  });
+  overlay.addEventListener("click", close);
+};
