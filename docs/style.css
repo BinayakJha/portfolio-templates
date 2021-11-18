@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata|Merriweather");
 
 body {
+        width:100vw;
 	font-family: "Inconsolata", monospace;
 	margin: 0;
 	display: flex;
@@ -21,7 +22,7 @@ img {
 }
 
 #portfolio {
-	width: min(100vw, 1000px);
+	width: min(100%, 1000px);
 	min-height: 100vh;
 	padding: 5px;
 	background: linear-gradient(to right, black 0%, transparent 5%),linear-gradient(to left, black 0%, transparent 5%),repeating-linear-gradient(to bottom, black 5%, red 7% 10%, black 12% 15%);
