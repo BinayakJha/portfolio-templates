@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Merriweather");
+
+body {
+        width:100vw;
+	font-family: "Inconsolata", monospace;
+	margin: 0;
+	display: flex;
+        flex-direction:column;
+	justify-content: center;
+	background: linear-gradient(45deg, black 25%, transparent 35% 60%, black 70%),
+		linear-gradient(-45deg, black 25%, red 35% 60%, black 70%);
+	background-size: 100px 100px;
+        box-sizing:border-box;
+}
+
+button {
+	cursor: pointer;
+}
+
+img {
+	height: 100%;
+}
+
+#portfolio {
+	width: min(100%, 1000px);
+	min-height: 100vh;
+	padding: 5px;
+	background: linear-gradient(to right, black 0%, transparent 5%),linear-gradient(to left, black 0%, transparent 5%),repeating-linear-gradient(to bottom, black 5%, red 7% 10%, black 12% 15%);
+	background-size: 100% 100%,100% 100%,50vw 100vh;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(4, minmax(200px, 1fr));
+	grid-gap: 5px;
+}
+
+@media (max-width:800px) {
+	#portfolio {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width:600px) {
+	#portfolio {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.project {
+	min-height: 350px;
+	position: relative;
+	background: #F2DAD7;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+.project img {
+	position: absolute;
+	opacity: 0.9;
+}
+
+.project p {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	padding: 1em 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	z-index: 3;
+}
+
+.project .grid__title {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	white-space: nowrap;
+	bottom: 0;
+	font-weight: 100;
+	font-size: 0.8em;
+	z-index: 3;
+	text-transform: uppercase;
+	color: #474545;
+	letter-spacing: 2px;
+}
+
+.project:hover .grid__overlay.animatable,
+
+.project:focus .grid__overlay.animatable {
+	transform: translateY(0%);
+	transition: all 0.3s ease-in-out;
+}
+
+.grid__overlay {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 20%, transparent 25% 75%, rgba(224, 223, 223, 0.8) 90%);
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	display: grid;
+	justify-items: space-between;
+}
+
+.grid__overlay.animatable {
+	background: rgba(229, 182, 177, 0.9);
+	justify-items: center;
+	align-items: center;
+	transform: translateY(101%);
+	transition: all 0.3s ease-in-out;
+}
+
+.grid__overlay button {
+	background: none;
+	outline: none;
+	font-weight: 100;
+	letter-spacing: 2px;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.grid__overlay button:hover {
+	transition: all 0.3s ease-in-out;
+	background: #ffffff;
+	color: #D1A39E;
+	transform: scale(1.05);
+}
+
+.overlay {
+	position: fixed;
+	background: rgba(71, 69, 69, 0.7);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	display: none;
+	z-index: 3;
+}
+
+.overlay.open {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+
+.overlay__inner {
+	background: #ffffff;
+	width: 100%;
+	height: auto;
+	max-height: 100%;
+	max-width: 700px;
+	padding: 20px;
+	position: relative;
+	opacity: 1;
+}
+
+.overlay__inner img {
+	height: auto;
+	width: 100%;
+}
+
+.close {
+	position: absolute;
+	top: 3px;
+	right: 10px;
+	background: none;
+	outline: 0;
+	color: #474545;
+	border: 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.close:hover {
+	color: #D1A39E;
+}
+
+.project__image {
+	margin-left: -50%;
+}
